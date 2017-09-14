@@ -1,0 +1,69 @@
+INSERT INTO [dbo].[CMS_FormUserControl]
+           ([UserControlDisplayName]
+           ,[UserControlCodeName]
+           ,[UserControlFileName]
+           ,[UserControlForText]
+           ,[UserControlForLongText]
+           ,[UserControlForInteger]
+           ,[UserControlForDecimal]
+           ,[UserControlForDateTime]
+           ,[UserControlForBoolean]
+           ,[UserControlForFile]
+           ,[UserControlShowInBizForms]
+           ,[UserControlDefaultDataType]
+           ,[UserControlDefaultDataTypeSize]
+           ,[UserControlShowInDocumentTypes]
+           ,[UserControlShowInSystemTables]
+           ,[UserControlShowInWebParts]
+           ,[UserControlShowInReports]
+           ,[UserControlGUID]
+           ,[UserControlLastModified]
+           ,[UserControlForGuid]
+           ,[UserControlShowInCustomTables]
+           ,[UserControlForVisibility]
+           ,[UserControlParameters]
+           ,[UserControlForDocAttachments]
+           ,[UserControlForLongInteger]
+           ,[UserControlResourceID]
+           ,[UserControlType]
+           ,[UserControlParentID]
+           ,[UserControlDescription]
+           ,[UserControlThumbnailGUID]
+           ,[UserControlPriority]
+           ,[UserControlIsSystem])
+     VALUES
+           (N'OneDrive File Selector'
+           ,N'OneDriveFileSelector'
+           ,'~/CMSFormControls/SquareballDigital/CloudFileSelectors/OneDrive/OneDrive.ascx'
+           ,1
+           ,1
+           ,0
+           ,0
+           ,0
+           ,0
+           ,1
+           ,1
+           ,'Text'
+           ,500
+           ,1
+           ,1
+           ,1
+           ,1
+           ,NEWID()
+           ,GETDATE()
+           ,0
+           ,1
+           ,0
+           ,N'<form version="2"><field column="OneDriveClientID" visible="true" columntype="text" columnsize="200" publicfield="false" guid="' + CONVERT(varchar(50), NEWID())+ '" displayinsimplemode="true" reftype="Required" resolvedefaultvalue="False"><properties><fielddescription>OneDrive control to Redirect URLs in app settings. https://account.live.com/developers/applications </fielddescription><fieldcaption>OneDrive Client ID</fieldcaption></properties><settings><Trim>False</Trim><AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected><FilterMode>False</FilterMode><AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem><AutoCompleteEnableCaching>False</AutoCompleteEnableCaching><controlname>TextBoxControl</controlname></settings></field></form>'		   
+           ,1
+           ,0
+           ,NULL
+           ,2
+           ,NULL
+           ,NULL
+           ,NULL
+           ,100
+           ,0)
+GO
+
+
